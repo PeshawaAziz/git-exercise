@@ -1,5 +1,7 @@
 package packages;
 
+import java.awt.Color;
+import java.awt.Dimension;
 import javax.swing.*;
 
 public class informationPage {
@@ -7,8 +9,9 @@ public class informationPage {
     public void create(JFrame frame) {
         // Create the main panel
         JPanel panel = new JPanel();
-        panel.setBounds(0, 0, 600, 600);
-        panel.setLayout(null);
+        panel.setBounds(0, 0, 600, 1000);
+        panel.setLayout(new BoxLayout(panel, BoxLayout.PAGE_AXIS));
+        panel.setBackground(Color.YELLOW);
 
         // Name Label and Text Field
         JLabel nameLabel = new JLabel("name");
@@ -76,15 +79,19 @@ public class informationPage {
         // Add components to the panel
         panel.add(nameLabel);
         panel.add(nameField);
+        panel.add(Box.createRigidArea(new Dimension(0, 100)));
         panel.add(ageLabel);
         panel.add(ageField);
+        panel.add(Box.createRigidArea(new Dimension(0, 100)));
         panel.add(emailLabel);
         panel.add(emailField);
+        panel.add(Box.createRigidArea(new Dimension(0, 100)));
         panel.add(levelLabel);
         panel.add(level1);
         panel.add(level2);
         panel.add(level3);
         panel.add(level4);
+        panel.add(Box.createRigidArea(new Dimension(0, 50)));
         panel.add(nextButton);
 
         // Add panel to the frame

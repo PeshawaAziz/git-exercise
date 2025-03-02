@@ -1,5 +1,6 @@
 package packages;
 
+import java.awt.Color;
 import javax.swing.*;
 
 public class questionsPage {
@@ -7,8 +8,9 @@ public class questionsPage {
     public void create(JFrame frame) {
         // Create and configure the panel
         JPanel panel = new JPanel();
-        panel.setBounds(0, 0, 600, 600);
-        panel.setLayout(null);
+        panel.setBounds(0, 0, 600, 1200);
+        panel.setLayout(new BoxLayout(panel, BoxLayout.PAGE_AXIS));
+        panel.setBackground(Color.YELLOW);
 
         // Question 1
         JLabel question1 = new JLabel("How attractive do you find the software's UI?");
