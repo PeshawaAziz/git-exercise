@@ -9,7 +9,7 @@ public class informationPage {
     public void create(JFrame frame) {
         // Create the main panel
         JPanel panel = new JPanel();
-        panel.setBounds(0, 0, 600, 800);
+        panel.setBounds(0, 0, 600, 1000);
         panel.setLayout(new BoxLayout(panel, BoxLayout.PAGE_AXIS));
         panel.setBackground(Color.YELLOW);
 
