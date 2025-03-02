@@ -16,12 +16,17 @@ public class Main {
         panel.setLayout(null);
         panel.setBounds(0, 0, 600, 600);
 
+        // Create font for labels
+        Font font = new Font("vazir", PLAIN, 14);
+
         // Create title label
         JLabel title = new JLabel("فرم نظرسنجی");
+        title.setFont(font);
         title.setBounds(10, 10, 100, 20);
 
         // Create start button
         JButton startButton = new JButton("شروع!");
+        startButton.setFont(font);
         startButton.setBounds(10, 40, 100, 20);
 
         // Add components to the panel
