@@ -1,5 +1,6 @@
 package packages;
 
+import java.awt.Color;
 import javax.swing.*;
 
 public class questionsPage {
@@ -8,7 +9,8 @@ public class questionsPage {
         // Create and configure the panel
         JPanel panel = new JPanel();
         panel.setBounds(0, 0, 600, 600);
-        panel.setLayout(null);
+        panel.setLayout(new BoxLayout(panel, BoxLayout.PAGE_AXIS));
+        panel.setBackground(Color.YELLOW);
 
         // Question 1
         JLabel question1 = new JLabel("چقدر رابط کاربری نرم افزار از نظر شما جذاب است؟");
@@ -35,7 +37,6 @@ public class questionsPage {
         // Question 2
         JLabel question2 = new JLabel("آیا دسترسی به امکانات مختلف نرم افزار برای شما آسان است؟");
         question2.setBounds(10, 90, 300, 20);
-
 
         JRadioButton radio2_1 = new JRadioButton("۱");
         radio2_1.setBounds(10, 120, 100, 20);
