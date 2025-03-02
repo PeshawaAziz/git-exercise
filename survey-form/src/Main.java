@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
         // Create and configure the main frame
         JFrame frame = new JFrame("فرم نظرسنجی");
-        frame.setSize(600, 600);
+        frame.setSize(600, 800);
         frame.setLocationRelativeTo(null);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(null);
@@ -16,7 +16,7 @@ public class Main {
         // Create and configure the main panel
         JPanel panel = new JPanel();
         panel.setLayout(new BorderLayout());
-        panel.setBounds(0, 0, 600, 600);
+        panel.setBounds(0, 0, 600, 800);
         panel.setBackground(Color.YELLOW);
 
         // Create title label

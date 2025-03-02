@@ -11,7 +11,7 @@ public class thankYouPage {
         // Create and configure the panel
         JPanel panel = new JPanel();
         panel.setLayout(new BorderLayout());
-        panel.setBounds(0, 0, 600, 600);
+        panel.setBounds(0, 0, 600, 800);
         panel.setBackground(Color.YELLOW);
 
         // Create thank you label

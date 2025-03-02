@@ -1,6 +1,7 @@
 package packages;
 
 import java.awt.Color;
+import java.awt.Dimension;
 import javax.swing.*;
 
 public class questionsPage {
@@ -8,7 +9,7 @@ public class questionsPage {
     public void create(JFrame frame) {
         // Create and configure the panel
         JPanel panel = new JPanel();
-        panel.setBounds(0, 0, 600, 600);
+        panel.setBounds(0, 0, 600, 1200);
         panel.setLayout(new BoxLayout(panel, BoxLayout.PAGE_AXIS));
         panel.setBackground(Color.YELLOW);
 
@@ -123,12 +124,16 @@ public class questionsPage {
         panel.add(radio1_4);
         panel.add(radio1_5);
 
+        panel.add(Box.createRigidArea(new Dimension(0, 100)));
+
         panel.add(question2);
         panel.add(radio2_1);
         panel.add(radio2_2);
         panel.add(radio2_3);
         panel.add(radio2_4);
         panel.add(radio2_5);
+
+        panel.add(Box.createRigidArea(new Dimension(0, 100)));
 
         panel.add(question3);
         panel.add(radio3_1);
@@ -137,12 +142,16 @@ public class questionsPage {
         panel.add(radio3_4);
         panel.add(radio3_5);
 
+        panel.add(Box.createRigidArea(new Dimension(0, 100)));
+
         panel.add(question4);
         panel.add(radio4_1);
         panel.add(radio4_2);
         panel.add(radio4_3);
         panel.add(radio4_4);
         panel.add(radio4_5);
+
+        panel.add(Box.createRigidArea(new Dimension(0, 100)));
 
         panel.add(nextButton);
 
